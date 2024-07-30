@@ -1,0 +1,94 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.elevator-system {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.floors, .controls {
+    display: flex;
+    flex-direction: column;
+    margin: 0 10px;
+}
+
+.floor, .call-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 50px;
+    margin: 5px 0;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    cursor: pointer;
+}
+
+.floor {
+    background-color: #f8f8f8;
+}
+
+.call-button {
+    background-color: #28a745;
+    color: #fff;
+}
+
+.call-button.waiting {
+    background-color: #dc3545;
+    color: #fff;
+}
+
+.call-button.arrived {
+    background-color: #17a2b8;
+    color: #fff;
+}
+
+.elevators {
+    display: flex;
+    flex-direction: row;
+}
+
+.elevator-lane {
+    position: relative;
+    width: 100px;
+    height: 600px;
+    border: 1px solid #ccc;
+    margin-right: 10px;
+}
+
+.elevator {
+    position: absolute;
+    width: 100%;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: top 1s linear;
+}
+
+.elevator img {
+    width: 30px;
+    height: 30px;
+}
+
+.elevator.moving {
+    background-color: #dc3545;
+}
+
+.elevator.arrived {
+    background-color: #28a745;
+}

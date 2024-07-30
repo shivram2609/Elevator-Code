@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elevator Exercise</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="elevator-system">
+            <div class="floors">
+                <div class="floor" data-floor="9">9 <span class="timer"></span></div>
+                <div class="floor" data-floor="8">8 <span class="timer"></span></div>
+                <div class="floor" data-floor="7">7 <span class="timer"></span></div>
+                <div class="floor" data-floor="6">6 <span class="timer"></span></div>
+                <div class="floor" data-floor="5">5 <span class="timer"></span></div>
+                <div class="floor" data-floor="4">4 <span class="timer"></span></div>
+                <div class="floor" data-floor="3">3 <span class="timer"></span></div>
+                <div class="floor" data-floor="2">2 <span class="timer"></span></div>
+                <div class="floor" data-floor="1">1 <span class="timer"></span></div>
+                <div class="floor" data-floor="0">Ground Floor <span class="timer"></span></div>
+            </div>
+            <div class="elevators">
+                <div class="elevator-lane" data-lane="1">
+                    <div class="elevator" data-elevator="1" style="top: 550px;"><img src="elevator.svg" alt="Elevator"></div>
+                </div>
+                <div class="elevator-lane" data-lane="2">
+                    <div class="elevator" data-elevator="2" style="top: 550px;"><img src="elevator.svg" alt="Elevator"></div>
+                </div>
+                <div class="elevator-lane" data-lane="3">
+                    <div class="elevator" data-elevator="3" style="top: 550px;"><img src="elevator.svg" alt="Elevator"></div>
+                </div>
+                <div class="elevator-lane" data-lane="4">
+                    <div class="elevator" data-elevator="4" style="top: 550px;"><img src="elevator.svg" alt="Elevator"></div>
+                </div>
+                <div class="elevator-lane" data-lane="5">
+                    <div class="elevator" data-elevator="5" style="top: 550px;"><img src="elevator.svg" alt="Elevator"></div>
+                </div>
+            </div>
+            <div class="controls">
+                <button class="call-button" data-floor="9">Call</button>
+                <button class="call-button" data-floor="8">Call</button>
+                <button class="call-button" data-floor="7">Call</button>
+                <button class="call-button" data-floor="6">Call</button>
+                <button class="call-button" data-floor="5">Call</button>
+                <button class="call-button" data-floor="4">Call</button>
+                <button class="call-button" data-floor="3">Call</button>
+                <button class="call-button" data-floor="2">Call</button>
+                <button class="call-button" data-floor="1">Call</button>
+                <button class="call-button" data-floor="0">Call</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Audio elements for sound effects -->
+    <audio id="call-sound" src="call-sound.mp3" preload="auto"></audio>
+    <audio id="arrive-sound" src="arrive-sound.mp3" preload="auto"></audio>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
